@@ -1,17 +1,17 @@
 $(function(){
   var n=6;
   var $btnArgee=$('input[type="button"]');
-  var timer=window.setInterval(funtion(){
+  var timer=window.setInterval(function(){
     n--;
     if(n===0){
       window.clearInterval(timer);
       $btnArgee.removeAttr('disabled');
-      $btnargee.val('同意');
+      $btnArgee.val('同意');
     }else{
       $btnArgee.val('同意('+n+'s)');
     }
   },1000);
-  $btnArgee.click(funtion(){
+  $btnArgee.click(function(){
     alert('SPA! 01-timer-button task!')
   });
 });
